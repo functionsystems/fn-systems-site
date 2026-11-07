@@ -47,6 +47,7 @@
 - Visual Studio Code
 - NPM
 - Chrome DevTools
+- Postman
 - Git & GitHub
 
 
