@@ -56,7 +56,7 @@
 # How to run the application
 
 ### 1. Installation
-Ensure that you have **VC Code** IDE installed on your computer:
+Ensure that you have **VC Code** IDE, **Node.js**, and **Angular CLI**, installed on your computer:
 
 - For more information related to VS Code installation and setup, please check out the [VS Code Setup and Installation](https://code.visualstudio.com/download) website.
 
