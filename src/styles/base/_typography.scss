@@ -1,0 +1,75 @@
+@use 'abstracts' as *;
+
+//Body Typography
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-std-16;
+  font-weight: $font-weight-normal;
+  line-height: 1.6;
+  color: $brand-color-primary;
+}
+
+//HTML Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-base;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+  color: $brand-color-secondary;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+//Paragraph
+p {
+  font-size: $font-size-std-16;
+  line-height: $line-height-base;
+  margin-bottom: $spacing-xxs-4;
+}
+
+//Text Elements
+small {
+  font-size: $font-size-sm-12;
+}
+
+strong,
+b {
+  font-weight: $font-weight-bold;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+//Block Quotes
+blockquote {
+  font-size: $font-size-lg-24;
+  line-height: $line-height-base;
+}

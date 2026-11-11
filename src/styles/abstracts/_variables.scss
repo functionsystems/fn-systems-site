@@ -1,5 +1,105 @@
-//Test the file wiring
+/* 
+Variables List:
+    - Brand colrs
+    - Font family | sizes | weights
+    - Line heights
+    - Border radius sizes
+    - Spacing sizes
+    - State colors
+    - Box Shadows
+*/
 
-$primary-color: #2563eb;
-$secondary-color: #64748b;
-$font-family: 'Arial', sans-serif;
+//Brand colors
+$brand-color-primary: rgba(0, 153, 133, 1);
+$brand-color-secondary: rgba(0, 48, 77, 1);
+$brand-color-tertiary: rgba(56, 56, 56, 1);
+/* ---------------------------------------------------------------*/
+
+//Font family
+$font-family-base:
+  -apple-system-body,
+  ui-sans-serif,
+  -apple-system,
+  system-ui,
+  Segoe UI,
+  Helvetica,
+  Apple Color Emoji,
+  Arial,
+  sans-serif,
+  Segoe UI Emoji,
+  Segoe UI Symbol;
+/* ---------------------------------------------------------------*/
+
+//Font sizes
+$font-size-xxs-4: 0.3rem; //2xs
+$font-size-xs-8: 0.5rem; //xs
+$font-size-sm-12: 0.8rem; //sm
+$font-size-std-16: 1rem; //std
+$font-size-md-20: 1.3rem; //md
+$font-size-lg-24: 1.5rem; //lg
+$font-size-xl-32: 2rem; //xl
+$font-size-xxl-40: 3rem; //2xl
+$font-size-xxxl-48: 3rem; //3xl
+/* ---------------------------------------------------------------*/
+
+//Font weights
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+/* ---------------------------------------------------------------*/
+
+//Line heights
+$line-height-none: 0;
+$line-height-base: 1.6;
+$line-height-heading: 1.2;
+/* ---------------------------------------------------------------*/
+
+//Border radius sizes
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 12px;
+/* ---------------------------------------------------------------*/
+
+//Box Shadows
+$shadow-lg: 0 10px 20px rgb(0 0 0 / 15%);
+$shadow-sm: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+$shadow-md: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+/* ---------------------------------------------------------------*/
+
+//Media Query Beakpoints
+$breakpoint-mobile-320: 20rem; //mobile-sm
+$breakpoint-mobile-375: 23.438rem; //mobile-md
+$breakpoint-mobile-480: 30rem; //mobile-lg
+
+$breakpoint-tablet-680: 42.5rem; //tablet-sm
+$breakpoint-tablet-768: 48rem; //tablet-md
+$breakpoint-tablet-920: 57.5rem; //tablet-lg
+
+$breakpoint-desktop-992: 62rem; //desktop-sm
+$breakpoint-desktop-1200: 75rem; //desktop-md
+$breakpoint-desktop-1400: 87.5rem; //desktop-lg
+/* ---------------------------------------------------------------*/
+
+//Spacing sizes
+$spacing-xxs-4: 0.3rem; //2xs
+$spacing-xs-8: 0.5rem; //xs
+$spacing-sm-12: 0.8rem; //sm
+$spacing-std-16: 1rem; //std
+$spacing-md-20: 1.3rem; //md
+$spacing-lg-24: 1.5rem; //lg
+$spacing-xl-32: 2rem; //xl
+$spacing-xxl-40: 3rem; //2xl
+$spacing-xxxl-48: 3rem; //3xl
+/* ---------------------------------------------------------------*/
+
+//State colors
+$status-color-error: #dc2626;
+$status-color-success: #16a34a;
+$status-color-warning: #ffc107;
+$status-color-info: #17a2b8;
+/* ---------------------------------------------------------------*/
+
+//Element Effects
+$transition-fast: 150ms ease-in-out;
+$transition-base: 250ms ease-in-out;
+/* ---------------------------------------------------------------*/

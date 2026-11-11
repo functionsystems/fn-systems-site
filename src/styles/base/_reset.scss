@@ -1,0 +1,76 @@
+//Box Sizing
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+//HTML and Body
+html {
+  scroll-behavior: smooth;
+  text-align: center;
+
+  border: 1px solid red;
+
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+
+//Margins
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+//List
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+//HyperLinks
+a {
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+  color: var(--hyperlink-default-color);
+}
+
+//HTML Media
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+//HTML Forms
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+//HTML Tables
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
