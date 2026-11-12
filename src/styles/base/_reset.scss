@@ -15,7 +15,7 @@
 //HTML and Body
 html {
   scroll-behavior: smooth;
-  border: 1px solid red;
+  // border: 1px solid red;
 
   display: flex;
   flex-direction: column; /* Stacks items vertically */
@@ -58,7 +58,6 @@ a {
   font-size: inherit;
   font-weight: inherit;
   text-decoration: none;
-  color: var(--hyperlink-default-color);
 }
 
 //HTML Media

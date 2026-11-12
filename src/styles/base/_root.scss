@@ -9,11 +9,11 @@
   --brand-color-tertiary: rgba(56, 56, 56, 1);
 
   //Hyperlink colors
-  --hyperlink-default-color: rgba(219, 26, 26, 1);
-  --hyperlink-hover-color: rgba(219, 26, 26, 1);
-  --hyperlink-active-color: rgba(219, 26, 26, 1);
+  --hyperlink-color-base: rgba(219, 26, 26, 1);
+  --hyperlink-color-hover: rgba(219, 26, 26, 1);
+  --hyperlink-color-active: rgba(219, 26, 26, 1);
 
-  //background colors
+  //base background colors
   --background-color-base: rgba(255, 255, 255, 1);
   --background-color-primary: rgba(241, 241, 241, 1);
   --background-colorr-secondary: rgba(245, 245, 245, 0.6);
@@ -24,4 +24,9 @@
 
   //button font colors
   --button-font-color: rgba(226, 232, 240, 1);
+
+  //buttons background colors
+  --button-background-color-base: rgba(255, 255, 255, 1);
+  --button-background-color-hover: rgba(255, 255, 255, 1);
+  --button-background-color-action: rgba(255, 255, 255, 1);
 }

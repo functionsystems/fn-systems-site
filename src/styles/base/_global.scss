@@ -30,9 +30,9 @@ body {
 //Hyperlinks default styles
 a {
   transition: color 0.3s ease;
-
+ color: var(--hyperlink-color-base);
   &:hover {
-    color: var(--hyperlink-hover-color);
+    color: var(--hyperlink-color-hover);
   }
 }
 
