@@ -1,0 +1,104 @@
+//Reusable Media Queries
+/* Minimum width */
+@mixin respond-min($min) {
+  @media (min-width: $min) {
+    @content;
+  }
+}
+
+/* Between two screen widths */
+@mixin respond-between($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+/* Maximum width */
+@mixin respond-max($max) {
+  @media (max-width: $max) {
+    @content;
+  }
+}
+/* ---------------------------------------------------------------*/
+
+
+//Reusable - CSS Flexbox
+@mixin flex-left { //align-left
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin flex-right { //align-right
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@mixin flex-center { //align-cener
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between { //space-between
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-around { //space-around
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin flex-evenly { //space-evenly
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* ---------------------------------------------------------------*/
+
+//Reusable - CSS Grids
+@mixin column-grid($columns, $gap) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  row-gap: $gap;
+}
+
+@mixin row-grid($row, $gap) {
+  display: grid;
+  grid-template-rows: repeat($row, 1fr);
+  column-gap: $gap;
+}
+/* ---------------------------------------------------------------*/
+
+//Containers
+@mixin container {
+  width: 100%;
+  max-width: $breakpoint-desktop-1200;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: $spacing-lg-24;
+  padding-right: $spacing-lg-24;
+}
+
+@mixin container-fluid {
+  width: 100%;
+  padding-left: $spacing-lg-24;
+  padding-right: $spacing-lg-24;
+}
+/* ---------------------------------------------------------------*/
+
+//Borders 
+@mixin borders-without-radius($border-widht: 1px) {
+  border: $border-widht solid var(--border-color-base);
+}
+
+@mixin borders-with-radius($border-widht: 1px, $radius: 0) {
+  border: $border-widht solid var(--border-color-base);
+  border-radius: $radius;
+}

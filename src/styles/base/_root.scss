@@ -3,22 +3,30 @@
   --neutral-color-black: rgba(0, 0, 0, 1);
   --neutral-color-white: rgba(255, 255, 255, 1);
 
-  //Font colors
-  --font-color-primary: #171717;
-  --font-color-secondary: #666666;
+  //Brand colors
+  --brand-color-primary: rgba(0, 153, 133, 1);
+  --brand-color-secondary: rgba(0, 48, 77, 1);
+  --brand-color-tertiary: rgba(56, 56, 56, 1);
 
   //Hyperlink colors
-  --hyperlink-default-color: rgba(219, 26, 26, 1);
-  --hyperlink-hover-color: rgba(219, 26, 26, 1);
-  --hyperlink-active-color: rgba(219, 26, 26, 1);
+  --hyperlink-color-base: rgba(219, 26, 26, 1);
+  --hyperlink-color-hover: rgba(219, 26, 26, 1);
+  --hyperlink-color-active: rgba(219, 26, 26, 1);
 
-  //background colors
-  --root-background-color: rgba(241, 241, 241, 1);
-  --primary-background-color: rgba(255, 255, 255, 1);
-  --secondary-background-colorr: rgba(245, 245, 245, 0.6);
+  //base background colors
+  --background-color-base: rgba(255, 255, 255, 1);
+  --background-color-primary: rgba(241, 241, 241, 1);
+  --background-colorr-secondary: rgba(245, 245, 245, 0.6);
 
   //Border colors
-  --border-color: rgba(226, 232, 240, 1);
-  //Border colors
+  --border-color-base: rgba(245, 245, 245, 0.6);
+  --border-color-focused: rgba(0, 153, 133, 1);
+
+  //button font colors
   --button-font-color: rgba(226, 232, 240, 1);
+
+  //buttons background colors
+  --button-background-color-base: rgba(255, 255, 255, 1);
+  --button-background-color-hover: rgba(255, 255, 255, 1);
+  --button-background-color-action: rgba(255, 255, 255, 1);
 }

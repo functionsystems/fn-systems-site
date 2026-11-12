@@ -1,0 +1,61 @@
+//Default HTML Elements styles
+
+@use 'abstracts' as *;
+
+//HTML Document styles
+html {
+  background-color: var(--background-color-base);
+}
+
+body {
+  background-color: var(--background-color-base);
+  color: $brand-color-primary;
+}
+
+
+//Text selection default styles
+::selection {
+  background-color: var(--background-color-primary);
+  color: var(--neutral-color-white);
+}
+
+
+//On-Focus
+:focus-visible {
+  outline: 2px solid var(--border-color-focused);
+  outline-offset: 3px;
+}
+
+
+//Hyperlinks default styles
+a {
+  transition: color 0.3s ease;
+ color: var(--hyperlink-color-base);
+  &:hover {
+    color: var(--hyperlink-color-hover);
+  }
+}
+
+
+//Button default styles
+button {
+  transition: all 0.3s ease;
+}
+
+
+//Form Elements default styles
+input,
+textarea,
+select {
+  width: 100%;
+}
+
+
+//Disabled elements default styles
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}

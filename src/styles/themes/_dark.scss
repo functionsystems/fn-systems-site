@@ -1,5 +1,5 @@
 [data-theme='dark'] {
-  //neutral colors
+ //neutral colors
   --neutral-color-black: rgba(0, 0, 0, 1);
   --neutral-color-white: rgba(255, 255, 255, 1);
 
@@ -13,12 +13,14 @@
   --hyperlink-active-color: rgba(219, 26, 26, 1);
 
   //background colors
-  --root-background-color: rgba(241, 241, 241, 1);
-  --primary-background-color: rgba(255, 255, 255, 1);
-  --secondary-background-colorr: rgba(245, 245, 245, 0.6);
+  
+  --background-color-base: rgba(255, 255, 255, 1);
+  --background-color-primary: rgba(241, 241, 241, 1);
+  --background-colorr-secondary: rgba(245, 245, 245, 0.6);
 
   //Border colors
   --border-color: rgba(226, 232, 240, 1);
-  //Border colors
+  
+  //button font colors
   --button-font-color: rgba(226, 232, 240, 1);
 }
