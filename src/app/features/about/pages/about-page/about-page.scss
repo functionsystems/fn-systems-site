@@ -1,0 +1,5 @@
+@use 'abstracts' as *;
+#about-page-wrapper {
+//   max-width: $breakpoint-desktop-1200;
+  @include borders-with-radius(1px, 6);
+}

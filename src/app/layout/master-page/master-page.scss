@@ -1,0 +1,25 @@
+@use 'abstracts' as *;
+#master-page-wrapper {
+  //master-page sections
+  .section-wrapper {
+    @include borders-without-radius(1px);
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+
+    //section content container
+    .content-wrapper {
+      width: 100%;
+      max-width: $breakpoint-desktop-1200;
+      @include borders-without-radius(3px);
+      border-color: var(--border-color-focused);
+
+      padding: $spacing-lg-24;
+
+      &.navbar-wrapper {
+        padding: 0 $spacing-lg-24;
+      }
+    }
+  }
+}

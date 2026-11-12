@@ -10,9 +10,9 @@ Variables List:
 */
 
 //Brand colors
-$brand-color-primary: rgba(0, 153, 133, 1);
-$brand-color-secondary: rgba(0, 48, 77, 1);
-$brand-color-tertiary: rgba(56, 56, 56, 1);
+$brand-color-primary: var(--brand-color-primary);
+$brand-color-secondary: var(--brand-color-secondary);
+$brand-color-tertiary: var(--brand-color-tertiary);
 /* ---------------------------------------------------------------*/
 
 //Font family
@@ -58,12 +58,16 @@ $line-height-heading: 1.2;
 $radius-sm: 4px;
 $radius-md: 8px;
 $radius-lg: 12px;
+$radius-full: 999px;
 /* ---------------------------------------------------------------*/
 
 //Box Shadows
 $shadow-lg: 0 10px 20px rgb(0 0 0 / 15%);
 $shadow-sm: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 $shadow-md: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+// $shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+// $shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
 /* ---------------------------------------------------------------*/
 
 //Media Query Beakpoints
