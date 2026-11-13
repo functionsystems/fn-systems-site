@@ -71,17 +71,17 @@ $shadow-md: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 /* ---------------------------------------------------------------*/
 
 //Media Query Beakpoints
-$breakpoint-mobile-320: 20rem; //mobile-sm
-$breakpoint-mobile-375: 23.438rem; //mobile-md
-$breakpoint-mobile-480: 30rem; //mobile-lg
+$breakpoint-mobile-sm-320: 20rem; //mobile-sm
+$breakpoint-mobile-md-375: 23.438rem; //mobile-md
+$breakpoint-mobile-lg-480: 30rem; //mobile-lg
 
-$breakpoint-tablet-680: 42.5rem; //tablet-sm
-$breakpoint-tablet-768: 48rem; //tablet-md
-$breakpoint-tablet-920: 57.5rem; //tablet-lg
+$breakpoint-tablet-sm-680: 42.5rem; //tablet-sm
+$breakpoint-tabletmd-768: 48rem; //tablet-md
+$breakpoint-tablet-lg-920: 57.5rem; //tablet-lg
 
-$breakpoint-desktop-992: 62rem; //desktop-sm
-$breakpoint-desktop-1200: 75rem; //desktop-md
-$breakpoint-desktop-1400: 87.5rem; //desktop-lg
+$breakpoint-desktop-sm-992: 62rem; //desktop-sm
+$breakpoint-desktop-md-1200: 75rem; //desktop-md
+$breakpoint-desktop-lg-1400: 87.5rem; //desktop-lg
 /* ---------------------------------------------------------------*/
 
 //Spacing sizes
