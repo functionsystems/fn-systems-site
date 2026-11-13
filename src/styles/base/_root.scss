@@ -14,9 +14,13 @@
   --hyperlink-color-active: rgba(219, 26, 26, 1);
 
   //base background colors
-  --background-color-base: rgba(255, 255, 255, 1);
-  --background-color-primary: rgba(241, 241, 241, 1);
-  --background-colorr-secondary: rgba(245, 245, 245, 0.6);
+
+  --background-color-primary: rgba(0, 153, 133, 1);
+  --background-color-secondary: rgba(0, 48, 77, 1);
+  --background-color-tertiary: rgba(56, 56, 56, 1);
+  // --background-color-base: rgba(255, 255, 255, 1);
+  // --background-color-primary: rgba(241, 241, 241, 1);
+  // --background-color-secondary: rgba(245, 245, 245, 0.6);
 
   //Border colors
   --border-color-base: rgba(245, 245, 245, 0.6);
@@ -26,7 +30,7 @@
   --button-font-color: rgba(226, 232, 240, 1);
 
   //buttons background colors
-  --button-background-color-base: rgba(255, 255, 255, 1);
-  --button-background-color-hover: rgba(255, 255, 255, 1);
+  --button-background-color-base: rgba(0, 153, 133, 1);
+  --button-background-color-hover: rgba(207, 75, 0, 1);
   --button-background-color-action: rgba(255, 255, 255, 1);
 }

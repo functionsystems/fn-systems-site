@@ -31,6 +31,16 @@
       justify-content: center; /* Centers items vertically */
       align-items: center; /* Centers items horizontally */
     }
+
+    #footer-section {
+      // @include borders-without-radius(3px);
+      // color: var(--neutral-color-white);
+      // background-color: var(--background-color-tertiary);
+      background-image: url('/images/banners/banner-4.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 
   //master-hero-section specific

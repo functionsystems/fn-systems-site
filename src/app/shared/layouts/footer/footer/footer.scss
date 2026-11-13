@@ -1,0 +1,183 @@
+@use 'abstracts' as *;
+
+#footer-section-content {
+  display: flex;
+  flex-direction: column;
+
+  .footer-top-section-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: $spacing-std-16;
+
+    .footer-content-article {
+      display: flex;
+      flex-direction: column;
+      row-gap: $spacing-xxs-4;
+
+      &.identity-article {
+        .logo-item {
+          font-size: $font-size-lg-24;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          column-gap: $spacing-xs-8 - 0.25rem;
+          text-transform: capitalize;
+
+          .logo-image {
+            max-height: $spacing-lg-24;
+            margin-right: $spacing-xxs-4;
+          }
+
+          .fn-text {
+            color: var(--neutral-color-white);
+          }
+
+          .systems-text {
+            color: $brand-color-primary;
+          }
+        }
+      }
+
+      &.contact-article {
+        display: flex;
+        flex-direction: row;
+        column-gap: $spacing-lg-24;
+        @include container;
+        border-top: 1px solid $brand-color-primary;
+        padding-top: $spacing-std-16;
+
+        .contact-item {
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          row-gap: $spacing-xxs-4;
+          text-align: left;
+
+          .item-heading {
+            font-weight: $font-weight-bold;
+            text-transform: capitalize;
+          }
+
+          .item-list {
+            list-style: square;
+            margin-left: $spacing-md-20;
+
+            &.address {
+              list-style: none;
+              margin-left: 0;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  .footer-botton-section-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: $spacing-std-16;
+    background-color: var(--background-color-base);
+    border-top: 1px solid $brand-color-primary;
+    padding-top: $spacing-std-16;
+
+    .privacy-article {
+      display: flex;
+      justify-content: center;
+      column-gap: $spacing-md-20;
+      font-size: $font-size-sm-12;
+      padding-inline: 0;
+    }
+  }
+
+  @include respond-min($breakpoint-mobile-lg-480) {
+  }
+
+  @include respond-min($breakpoint-tablet-sm-680) {
+    .footer-top-section-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      flex-direction: row;
+      column-gap: $spacing-std-16;
+
+      .footer-content-article {
+        display: flex;
+        flex-direction: column;
+        row-gap: $spacing-xxs-4;
+
+        &.identity-article {
+          .logo-item {
+            font-size: $font-size-lg-24;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            column-gap: $spacing-xs-8 - 0.25rem;
+            text-transform: capitalize;
+
+            .logo-image {
+              max-height: $spacing-lg-24;
+              margin-right: $spacing-xxs-4;
+            }
+
+            .fn-text {
+              color: var(--neutral-color-white);
+            }
+
+            .systems-text {
+              color: $brand-color-primary;
+            }
+          }
+
+          .description-item,
+          .social-links-icons {
+            text-align: left;
+          }
+        }
+
+        &.contact-article {
+          display: flex;
+          flex-direction: row;
+          column-gap: $spacing-lg-24;
+          border-top: none;
+          padding-top: 0;
+
+          .contact-item {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            row-gap: $spacing-xxs-4;
+            text-align: left;
+
+            .item-heading {
+              font-weight: $font-weight-bold;
+              text-transform: capitalize;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-botton-section-content {
+      display: flex;
+      flex-direction: column;
+      row-gap: $spacing-std-16;
+      background-color: var(--background-color-base);
+      border-top: 1px solid $brand-color-primary;
+      padding-top: $spacing-std-16;
+
+      .privacy-article {
+        display: flex;
+        justify-content: center;
+        column-gap: $spacing-md-20;
+        font-size: $font-size-sm-12;
+        padding-inline: 0;
+      }
+    }
+  }
+
+  @include respond-min($breakpoint-tablet-lg-920) {
+  }
+
+  @include respond-min($breakpoint-desktop-md-1200) {
+  }
+}
