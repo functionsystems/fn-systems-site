@@ -26,12 +26,17 @@
     padding-top: $spacing-xs-8;
 
     .hero-action-button {
-      background-color: var(--brand-color-tertiary);
+      background-color: var(--button-background-color-hover);
       color: var(--neutral-color-white);
       padding: $spacing-xxs-4 $spacing-xl-32;
       text-transform: capitalize;
       cursor: pointer;
       font-size: $font-size-sm-12;
+
+      &:hover {
+        background-color: var(--button-background-color-base);
+        border-color: var(--button-background-color-base);
+      }
     }
 
     .no-bg-btn {
@@ -79,23 +84,15 @@
 
   @include respond-min($breakpoint-desktop-md-1200) {
 
-
     .hero-section-buttons-wrapper {
-      display: flex;
       column-gap: $spacing-lg-24;
       padding-top: $spacing-sm-12;
 
       .hero-action-button {
-        background-color: var(--brand-color-tertiary);
         color: var(--neutral-color-white);
         padding: $spacing-xs-8 $spacing-xxl-40;
         text-transform: capitalize;
         cursor: pointer;
-      }
-
-      .no-bg-btn {
-        background-color: transparent;
-        border: 1px solid var(--neutral-color-white);
       }
     }
   }
