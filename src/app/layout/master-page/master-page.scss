@@ -2,24 +2,58 @@
 
 #master-page-wrapper {
   //master-page sections
-  .section-wrapper {
-    @include borders-without-radius(1px);
+  .master-page-section {
+    // @include borders-without-radius(1px);
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centers items vertically */
-    align-items: center; /* Centers items horizontally */
+    justify-content: center;
+    align-items: center;
 
-    //section content container
+    //section-content container
     .content-wrapper {
-      width: 100%;
-      max-width: $breakpoint-desktop-1200;
-      @include borders-without-radius(3px);
-      border-color: var(--border-color-focused);
-      padding: $spacing-lg-24;
+      @include container;
     }
 
+    //header section specific
     #header-section {
-        // padding-top: 0;
+      padding: $spacing-std-16 + 0.125rem 0;
+    }
+
+    //hero section specific
+    #hero-section {
+      background-image: url('/images/banners/banner-1.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Centers items vertically */
+      align-items: center; /* Centers items horizontally */
+    }
+  }
+
+  //master-hero-section specific
+  #master-page-hero-section {
+    #hero-section {
+      min-height: 340px;
+    }
+  }
+
+  @include respond-min($breakpoint-mobile-lg-480) {
+    #master-page-hero-section {
+      #hero-section {
+        min-height: 420px;
       }
+    }
+  }
+
+  @include respond-min($breakpoint-tablet-sm-680) {
+  }
+
+  @include respond-min($breakpoint-tablet-lg-920) {
+  }
+
+  @include respond-min($breakpoint-desktop-md-1200) {
   }
 }

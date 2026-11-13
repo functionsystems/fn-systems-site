@@ -1,21 +1,27 @@
 <div class="master-page-wrapper" id="master-page-wrapper">
-
-  <section class="section-wrapper">
+  <!-- Header -->
+  <section class="master-page-section">
     <article class="content-wrapper " id="header-section">
-      <!-- Header -->
       <app-header />
     </article>
   </section>
 
+  <section class="master-page-section" id="master-page-hero-section">
+    <article class="content-wrapper" id="hero-section">
+      <!-- Header -->
+      <app-hero-section />
+    </article>
+  </section>
+
   <!-- Main Content -->
-  <main class="section-wrapper">
+  <main class="master-page-section">
     <article class="content-wrapper">
       <!-- Dynamic Page Content -->
       <router-outlet />
     </article>
   </main>
 
-  <section class="section-wrapper">
+  <section class="master-page-section">
     <article class="content-wrapper">
       <!-- Footer -->
       <app-footer />

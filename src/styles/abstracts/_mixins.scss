@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 //Reusable Media Queries
 /* Minimum width */
 @mixin respond-min($min) {
@@ -21,39 +23,44 @@
 }
 /* ---------------------------------------------------------------*/
 
-
 //Reusable - CSS Flexbox
-@mixin flex-left { //align-left
+@mixin flex-left {
+  //align-left
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-@mixin flex-right { //align-right
+@mixin flex-right {
+  //align-right
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-@mixin flex-center { //align-cener
+@mixin flex-center {
+  //align-cener
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@mixin flex-between { //space-between
+@mixin flex-between {
+  //space-between
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-@mixin flex-around { //space-around
+@mixin flex-around {
+  //space-around
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-@mixin flex-evenly { //space-evenly
+@mixin flex-evenly {
+  //space-evenly
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -76,14 +83,25 @@
 
 //Containers
 @mixin container {
+  
+  //dedfault - mobile screen size
   width: 100%;
-  max-width: $breakpoint-desktop-1200;
+  max-width: $breakpoint-desktop-md-1200;
+  margin-inline: auto; //left to right
+  padding: $spacing-std-16;
 
-  margin-left: auto;
-  margin-right: auto;
+  //from tablet screen size
+  @include respond-min($breakpoint-mobile-lg-480) {
+    padding: $spacing-lg-24;
+  }
 
-  padding-left: $spacing-lg-24;
-  padding-right: $spacing-lg-24;
+  @include respond-min($breakpoint-tablet-lg-920) {
+    padding: $spacing-xl-32;
+  }
+
+  @include respond-min($breakpoint-desktop-md-1200) {
+    padding: $spacing-xxl-40;
+  }
 }
 
 @mixin container-fluid {
@@ -93,7 +111,7 @@
 }
 /* ---------------------------------------------------------------*/
 
-//Borders 
+//Borders
 @mixin borders-without-radius($border-widht: 1px) {
   border: $border-widht solid var(--border-color-base);
 }

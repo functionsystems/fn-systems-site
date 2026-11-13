@@ -5,10 +5,10 @@
   grid-template-columns: 1fr auto;
   column-gap: $spacing-lg-24;
 
-  .identity-section,
-  .action-btn-section {
-    @include borders-without-radius(1px);
-  }
+  //   .identity-section,
+  //   .action-btn-section {
+  //     @include borders-without-radius(1px);
+  //   }
 
   .identity-section {
     display: flex;
@@ -16,11 +16,18 @@
     align-items: center;
 
     .identity-details-wrapper {
-      font-size: $font-size-xl-32 - 0.25rem;
-      font-weight: $font-weight-bold;
+      font-size: $font-size-lg-24;
+      // font-weight: $font-weight-medium;
       display: flex;
+      align-items: center;
       column-gap: $spacing-xs-8 - 0.25rem;
       text-transform: capitalize;
+
+      .logo-image {
+        max-height: $spacing-xl-32;
+        margin-right: $spacing-xxs-4;
+        // width: $spacing-std-16;
+      }
 
       .fn-text {
         color: $brand-color-secondary;
@@ -32,9 +39,9 @@
     }
 
     .navigation-wrapper {
-        display: flex;
-        font-size: $font-size-std-16 + 0.125rem;
-        column-gap: $spacing-xl-32;
+      display: flex;
+      font-size: $font-size-std-16 + 0.125rem;
+      column-gap: $spacing-xl-32;
     }
   }
 

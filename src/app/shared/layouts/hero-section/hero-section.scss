@@ -1,0 +1,102 @@
+@use 'abstracts' as *;
+
+#hero-section-content {
+  //mobile-first design approach
+  color: var(--neutral-color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: $spacing-md-20;
+
+  @include container;
+
+  .hero-section-heading {
+    font-size: $font-size-lg-24;
+    color: var(--brand-color-primary);
+    text-transform: capitalize;
+  }
+
+  .hero-section-subheading {
+    font-size: $font-size-std-16;
+  }
+
+  .hero-section-buttons-wrapper {
+    display: flex;
+    column-gap: $spacing-std-16;
+    padding-top: $spacing-xs-8;
+
+    .hero-action-button {
+      background-color: var(--brand-color-tertiary);
+      color: var(--neutral-color-white);
+      padding: $spacing-xxs-4 $spacing-xl-32;
+      text-transform: capitalize;
+      cursor: pointer;
+      font-size: $font-size-sm-12;
+    }
+
+    .no-bg-btn {
+      background-color: transparent;
+      border: 1px solid var(--neutral-color-white);
+    }
+  }
+
+  @include respond-min($breakpoint-mobile-lg-480) {
+    .hero-section-heading {
+      font-size: $font-size-xl-32;
+    }
+
+    .hero-section-subheading {
+      font-size: $font-size-std-16 + 0.25rem;
+    }
+
+    .hero-section-buttons-wrapper {
+      .hero-action-button {
+        padding-inline: $spacing-xl-32;
+        font-size: $font-size-std-16;
+      }
+    }
+  }
+
+  @include respond-min($breakpoint-tablet-sm-680) {
+    .hero-section-heading {
+      font-size: $font-size-xl-32;
+    }
+
+    .hero-section-subheading {
+      font-size: $font-size-md-20;
+    }
+
+    .hero-section-buttons-wrapper {
+      .hero-action-button {
+        padding-inline: $spacing-xl-32;
+        font-size: $font-size-std-16;
+      }
+    }
+  }
+
+  @include respond-min($breakpoint-tablet-lg-920) {
+  }
+
+  @include respond-min($breakpoint-desktop-md-1200) {
+
+
+    .hero-section-buttons-wrapper {
+      display: flex;
+      column-gap: $spacing-lg-24;
+      padding-top: $spacing-sm-12;
+
+      .hero-action-button {
+        background-color: var(--brand-color-tertiary);
+        color: var(--neutral-color-white);
+        padding: $spacing-xs-8 $spacing-xxl-40;
+        text-transform: capitalize;
+        cursor: pointer;
+      }
+
+      .no-bg-btn {
+        background-color: transparent;
+        border: 1px solid var(--neutral-color-white);
+      }
+    }
+  }
+}
