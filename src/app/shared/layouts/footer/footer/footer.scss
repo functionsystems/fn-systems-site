@@ -12,9 +12,10 @@
     .footer-content-article {
       display: flex;
       flex-direction: column;
-      row-gap: $spacing-xxs-4;
+      row-gap: $spacing-sm-12;
 
       &.identity-article {
+        
         .logo-item {
           font-size: $font-size-lg-24;
           display: flex;
@@ -36,6 +37,14 @@
             color: $brand-color-primary;
           }
         }
+
+        .social-links-icons {
+          display: flex;
+          column-gap: $spacing-sm-12;
+          align-items: center;
+          justify-content: center;
+          font-size: $font-size-md-20;
+        }
       }
 
       &.contact-article {
@@ -56,6 +65,10 @@
           .item-heading {
             font-weight: $font-weight-bold;
             text-transform: capitalize;
+
+             fa-icon {
+                margin-right: $spacing-xxs-4;
+              }
           }
 
           .item-list {
@@ -67,7 +80,6 @@
               margin-left: 0;
             }
           }
-
         }
       }
     }
@@ -90,9 +102,6 @@
     }
   }
 
-  @include respond-min($breakpoint-mobile-lg-480) {
-  }
-
   @include respond-min($breakpoint-tablet-sm-680) {
     .footer-top-section-content {
       display: grid;
@@ -101,9 +110,6 @@
       column-gap: $spacing-std-16;
 
       .footer-content-article {
-        display: flex;
-        flex-direction: column;
-        row-gap: $spacing-xxs-4;
 
         &.identity-article {
           .logo-item {
@@ -128,6 +134,10 @@
             }
           }
 
+          .social-links-icons {
+            justify-content: left;
+          }
+
           .description-item,
           .social-links-icons {
             text-align: left;
@@ -135,24 +145,8 @@
         }
 
         &.contact-article {
-          display: flex;
-          flex-direction: row;
-          column-gap: $spacing-lg-24;
           border-top: none;
           padding-top: 0;
-
-          .contact-item {
-            display: flex;
-            flex: 1;
-            flex-direction: column;
-            row-gap: $spacing-xxs-4;
-            text-align: left;
-
-            .item-heading {
-              font-weight: $font-weight-bold;
-              text-transform: capitalize;
-            }
-          }
         }
       }
     }
